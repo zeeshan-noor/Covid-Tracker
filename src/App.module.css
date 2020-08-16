@@ -1,0 +1,17 @@
+body{
+/* background-color: white; */
+background-image: url("./image/map1.png");
+background-size: cover;
+}
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.image{
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
