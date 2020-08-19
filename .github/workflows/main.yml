@@ -23,10 +23,10 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Install Node.js
-      uses: actions/setup-node@v2-beta
+      uses: actions/setup-node@v2-beta@v1.4.3
       with:
         node-version: 12  
-    - uses: borales/actions-yarn@v2.0.0
+    - uses: borales/actions-yarn@v2.3.0
       with:
         cmd: install  
        
