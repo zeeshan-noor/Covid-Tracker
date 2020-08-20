@@ -23,10 +23,10 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Install Node.js
-      uses: actions/setup-node@v2-beta
+      uses: actions/setup-node@v2-beta@v2-beta
       with:
         node-version: 12  
-    - uses: borales/actions-yarn@v2.0.0
+    - uses: Borales/actions-yarn@vv2.0.0
       with:
         cmd: install  
        
@@ -36,4 +36,8 @@ jobs:
     - name: install Surge
       run: npm install --global surge
     - name: Deploying on Surge
-      run: surge ./ http://covid-19_tracker_zeeshan-noor.surge.sh/ --token ${{secrets.SURGE_TOKEN}}       
+<<<<<<< HEAD
+      run: surge ./build http://covid-19_tracker_zeeshan-noor.surge.sh/ --token ${{secrets.COVID_TRACKER_TOKEN}}       
+=======
+      run: surge ./build http://covid-19_tracker_zeeshan-noor.surge.sh/ --token ${{secrets.SURGE_TOKEN}}       
+>>>>>>> 4cc774946680d0a78f7b78dc86249cc25e6b1b6f
