@@ -36,8 +36,4 @@ jobs:
     - name: install Surge
       run: npm install --global surge
     - name: Deploying on Surge
-<<<<<<< HEAD
       run: surge ./build http://covid-19_tracker_zeeshan-noor.surge.sh/ --token ${{secrets.COVID_TRACKER_TOKEN}}       
-=======
-      run: surge ./build http://covid-19_tracker_zeeshan-noor.surge.sh/ --token ${{secrets.SURGE_TOKEN}}       
->>>>>>> 4cc774946680d0a78f7b78dc86249cc25e6b1b6f
